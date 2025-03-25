@@ -1,0 +1,98 @@
+models:
+  - name: stg_erp__address
+    columns:
+      - name: pk_address
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__country
+    columns:
+      - name: country_code
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__currency_rate
+    columns:
+      - name: pk_currency_rate
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__customer
+    columns:
+      - name: pk_customer
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__employee
+    columns:
+      - name: fk_person
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__person
+    columns:
+      - name: pk_person
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__product
+    columns:
+      - name: pk_product
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__product_category
+    columns:
+      - name: pk_product_category
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__product_subcategory
+    columns:
+      - name: pk_product_subcategory
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__sales_order_details
+    columns:
+      - name: pk_sales_order_details
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__sales_order
+    columns:
+      - name: pk_sales_order
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__sales_person
+    columns:
+      - name: fk_person
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__sales_reason
+    columns:
+      - name: pk_sales_reason
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_erp__state_province
+    columns:
+      - name: pk_state_province
+        data_tests:
+          - unique
+          - not_null
