@@ -1,9 +1,11 @@
 models:
-  - name: int_vendas__person  
+  - name: dim_person  
     description: Table containing personnel-related information.  
     columns:          
       - name: PK_PERSON  
-        description: Unique identifier for the person.  
+        description: Unique identifier for the person.
+        data_tests:
+          - unique  
       - name: NATIONAL_ID  
         description: National identification number of the person.  
       - name: NAME_PERSON  

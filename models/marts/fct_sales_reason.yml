@@ -1,5 +1,5 @@
 models:
-  - name: int_vendas__sales_reason  
+  - name: fct_sales_reason  
     description: Table containing reasons associated with sales orders.  
     columns:          
       - name: PK_SALES_ORDER  

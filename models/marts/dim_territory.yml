@@ -1,9 +1,11 @@
 models:
-  - name: int_vendas__territory  
+  - name: dim_territory  
     description: Table containing address and location details.  
     columns:          
       - name: PK_ADDRESS  
-        description: Unique identifier for the address.  
+        description: Unique identifier for the address.
+        data_tests:
+          - unique  
       - name: FK_TERRITORY  
         description: Foreign key referencing the sales territory.  
       - name: COUNTRY_NAME  
