@@ -1,0 +1,34 @@
+models:
+  - name: int_vendas__person  
+    description: Table containing personnel-related information.  
+    columns:          
+      - name: PK_PERSON  
+        description: Unique identifier for the person.  
+      - name: NATIONAL_ID  
+        description: National identification number of the person.  
+      - name: NAME_PERSON  
+        description: Full name of the person.  
+      - name: TITLE_PERSON  
+        description: Professional or personal title of the person (e.g., Mr., Dr.).  
+      - name: PERSON_TYPE  
+        description: Classification of the person (e.g., Employee, Contractor).  
+      - name: JOB_TITLE  
+        description: Job title or position held by the person.  
+      - name: GENDER  
+        description: Gender of the person (e.g., Male, Female, Non-binary).  
+      - name: BIRTH_DATE  
+        description: Date of birth of the person.  
+      - name: HIRE_DATE  
+        description: Date when the person was hired.  
+      - name: MARITAL_STATUS  
+        description: Marital status of the person (e.g., Single, Married).  
+      - name: EMAIL_PROMOTION  
+        description: Indicates if the person is subscribed to email promotions (TRUE or FALSE).  
+      - name: IS_SALARIED  
+        description: Indicates whether the person is a salaried employee (TRUE or FALSE).  
+      - name: IS_EMPLOYED  
+        description: Indicates whether the person is currently employed (TRUE or FALSE).  
+      - name: VACATION_HOURS  
+        description: Total number of vacation hours available to the person.  
+      - name: SICK_LEAVE_HOURS  
+        description: Total number of sick leave hours available to the person.  

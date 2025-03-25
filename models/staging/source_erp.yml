@@ -1,0 +1,121 @@
+
+sources:
+  - name: erp 
+    description: Sistema de vendas da Northwind.
+    schema: raw_adventure_works
+    database: fea24_11
+    tables:
+            
+      - name: ADDRESS
+        columns:
+        - name: ADDRESSID    
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true
+
+      - name: COUNTRYREGION
+        columns:
+        - name: COUNTRYREGIONCODE    
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true  
+
+      - name: CURRENCYRATE
+        columns:
+        - name: CURRENCYRATEID    
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: CUSTOMER
+        columns:
+        - name: CUSTOMERID   
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: EMPLOYEE
+        columns:
+        - name: BUSINESSENTITYID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: PERSON
+        columns:
+        - name: BUSINESSENTITYID  
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: PRODUCT
+        columns:
+        - name: PRODUCTID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: PRODUCTCATEGORY
+        columns:
+        - name: PRODUCTCATEGORYID    
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: PRODUCTSUBCATEGORY
+        columns:
+        - name: PRODUCTSUBCATEGORYID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: SALESORDERDETAIL
+        columns:
+        - name: SALESORDERDETAILID      
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: SALESORDERHEADER
+        columns:
+        - name: SALESORDERID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: SALESORDERHEADERSALESREASON
+
+      - name: SALESPERSON
+        columns:
+        - name: BUSINESSENTITYID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: SALESREASON
+        columns:
+        - name: SALESREASONID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 
+
+      - name: STATEPROVINCE
+        columns:
+        - name: STATEPROVINCEID     
+        data_tests:  
+          - primary_key: true  
+          - not_null: true  
+          - unique: true 

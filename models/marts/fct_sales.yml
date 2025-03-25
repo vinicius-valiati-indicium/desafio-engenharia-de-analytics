@@ -1,0 +1,56 @@
+models:
+  - name: int_vendas__sales  
+    description: Table containing sales order transaction details.  
+    columns:          
+      - name: FK_SALES_ORDER  
+        description: Unique identifier for the sales order.  
+      - name: FK_PRODUCT  
+        description: Foreign key referencing the purchased product.  
+      - name: FK_CUSTOMER  
+        description: Foreign key referencing the customer who placed the order.  
+      - name: FK_EMPLOYEE  
+        description: Foreign key referencing the employee responsible for the sale.  
+      - name: FK_TERRITORY  
+        description: Foreign key referencing the sales territory.  
+      - name: FK_BILL_ADDRESS  
+        description: Foreign key referencing the billing address.  
+      - name: FK_SHIP_ADDRESS  
+        description: Foreign key referencing the shipping address.  
+      - name: FK_SHIP_METHOD  
+        description: Foreign key referencing the shipping method used.  
+      - name: FK_CREDIT_CARD  
+        description: Foreign key referencing the credit card used for payment.  
+      - name: ORDER_DATE  
+        description: Date when the order was placed.  
+      - name: SHIP_DATE  
+        description: Date when the order was shipped.  
+      - name: DUE_DATE  
+        description: Date when the payment is due.  
+      - name: QUANTITY  
+        description: Number of units of the product purchased.  
+      - name: PRICE  
+        description: Unit price of the product in the original currency.  
+      - name: UNIT_PRICE_DISCOUNT  
+        description: Discount applied per unit of the product.  
+      - name: NET_PRICE  
+        description: Final price after applying the discount.  
+      - name: FROM_CURRENCY  
+        description: Original currency of the transaction.  
+      - name: AVG_RATE  
+        description: Average exchange rate used for currency conversion.  
+      - name: TO_CURRENCY  
+        description: Target currency after conversion.  
+      - name: PRICE_CONVERTED  
+        description: Unit price converted to the target currency.  
+      - name: NET_PRICE_CONVERTED  
+        description: Final price after discount, converted to the target currency.  
+      - name: TAXAMT  
+        description: Total tax amount applied to the order.  
+      - name: FREIGHT  
+        description: Shipping cost for the order.  
+      - name: ORDER_STATUS  
+        description: Status of the order (e.g., Pending, Shipped, Completed).  
+      - name: IS_ONLINE  
+        description: Indicates whether the order was placed online (TRUE or FALSE).  
+      - name: COMMENT  
+        description: Additional notes or comments related to the order.  

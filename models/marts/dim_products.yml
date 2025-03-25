@@ -1,0 +1,40 @@
+models:
+  - name: int_vendas__products  
+    description: Table containing product-related information.  
+    columns:          
+      - name: PK_PRODUCT  
+        description: Unique identifier for the product.  
+      - name: PRODUCT_NAME  
+        description: Name of the product.  
+      - name: SUBCATEGORY  
+        description: Subcategory to which the product belongs.  
+      - name: CATEGORY  
+        description: Category to which the product belongs.  
+      - name: PRODUCT_CODE  
+        description: Internal code used to identify the product.  
+      - name: IS_MANUFACTURED_IN_HOUSE  
+        description: Indicates whether the product is manufactured in-house (TRUE or FALSE).  
+      - name: IS_SALABLE  
+        description: Indicates whether the product is available for sale (TRUE or FALSE).  
+      - name: PRODUCT_COLOR  
+        description: The color of the product, if applicable.  
+      - name: SAFETY_STOCK_LEVEL  
+        description: Minimum stock level required to prevent shortages.  
+      - name: STANDARD_COST  
+        description: Standard cost to produce or acquire the product.  
+      - name: LIST_PRICE  
+        description: Selling price of the product.  
+      - name: SIZE  
+        description: Size of the product, if applicable.  
+      - name: SIZE_UNIT_MEASURE  
+        description: Measurement unit used for the product size (e.g., cm, inches).  
+      - name: WEIGHT  
+        description: Weight of the product, if applicable.  
+      - name: WEIGHT_UNIT_MEASURE  
+        description: Measurement unit used for the product weight (e.g., kg, lbs).  
+      - name: DAYS_TO_MANUFACTURE  
+        description: Number of days required to manufacture the product.  
+      - name: SELL_START_DATE  
+        description: Date when the product became available for sale.  
+      - name: IS_PRODUCT_DISABLED  
+        description: Indicates whether the product is disabled or discontinued (TRUE or FALSE).  
