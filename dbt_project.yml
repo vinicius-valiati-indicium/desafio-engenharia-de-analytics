@@ -38,5 +38,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   adventure_works_ae:
     # Applies to all files under models/example/
-    example:
+    intermediate:
+      +schema: int
+
+    marts:
       +materialized: table
+      +schema: marts
+
+    staging:
+      +schema: stg
+      erp:
