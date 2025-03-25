@@ -1,0 +1,10 @@
+models:
+  - name: int_vendas__sales_reason  
+    description: Table containing reasons associated with sales orders.  
+    columns:          
+      - name: PK_SALES_ORDER  
+        description: Unique identifier for the sales order.  
+      - name: REASON  
+        description: Specific reason associated with the sales order.  
+      - name: REASON_TYPE  
+        description: Category or type of the reason (e.g., Customer Request, System Error).  

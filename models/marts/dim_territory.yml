@@ -1,0 +1,26 @@
+models:
+  - name: int_vendas__territory  
+    description: Table containing address and location details.  
+    columns:          
+      - name: PK_ADDRESS  
+        description: Unique identifier for the address.  
+      - name: FK_TERRITORY  
+        description: Foreign key referencing the sales territory.  
+      - name: COUNTRY_NAME  
+        description: Full name of the country.  
+      - name: COUNTRY_CODE  
+        description: Country code following international standards (e.g., ISO 3166-1).  
+      - name: STATE_NAME  
+        description: Full name of the state or province.  
+      - name: STATE_CODE  
+        description: State or province abbreviation.  
+      - name: CITY  
+        description: Name of the city.  
+      - name: ADDRESS_LINE_1  
+        description: Primary address details (e.g., street name and number).  
+      - name: ADDRESS_LINE_2  
+        description: Additional address details (e.g., apartment, suite, or building).  
+      - name: POSTAL_CODE  
+        description: Postal or ZIP code of the address.  
+      - name: IS_ONLY_STATE_PROVINCE_FLAG  
+        description: Indicates whether the record represents only a state/province without a specific address (TRUE or FALSE).  
