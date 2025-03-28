@@ -18,6 +18,10 @@ with sales_details as (
     select * from {{ ref('stg_erp__currency_rate') }}
 )
 
+, credit_card as(
+    select * from {{ ref('stg_erp__credit_card') }}
+)
+
 , joined as (
     select
     sales_details.pk_sales_order_details
@@ -53,9 +57,12 @@ with sales_details as (
     , currency.avg_rate
     , currency.end_rate
 
+    , credit_card.card_type
+
     from sales_details
     left join sales on sales_details.fk_sales_order = sales.pk_sales_order
     left join currency on sales.fk_currency_rate = currency.pk_currency_rate and sales.order_date = currency.currency_date
+    left join credit_card on sales.fk_credit_card = credit_card.pk_creditcard
 )
 
 , metrics as (
@@ -96,8 +103,17 @@ with sales_details as (
     
     ,taxamt
     ,freight
-    , order_status  
-    , is_online  
+    , CASE 
+        WHEN order_status = 1 THEN 'In process'
+        WHEN order_status = 2 THEN 'Approved'
+        WHEN order_status = 3 THEN 'Backordered'
+        WHEN order_status = 4 THEN 'Rejected'
+        WHEN order_status = 5 THEN 'Shipped'
+        WHEN order_status = 6 THEN 'Cancelled'
+        ELSE 'Others'
+        END AS order_status
+    , is_online
+    , card_type  
     , CASE WHEN comment is null then 'No comment' else comment end as comment
     from joined
 )

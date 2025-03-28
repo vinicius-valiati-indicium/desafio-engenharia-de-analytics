@@ -9,6 +9,7 @@ sources:
       - name: COUNTRYREGION
       - name: CURRENCYRATE
       - name: CUSTOMER
+      - name: CREDITCARD
       - name: EMPLOYEE
       - name: PERSON
       - name: PRODUCT
@@ -20,3 +21,4 @@ sources:
       - name: SALESPERSON
       - name: SALESREASON
       - name: STATEPROVINCE
+      - name: STORE
