@@ -2,17 +2,10 @@ with sales_details as (
     select * from {{ ref('stg_erp__sales_order_details') }}
 )
 
-, sales_reason as (
-    select * from {{ ref('stg_erp__sales_reason') }}
-)
-
 , sales as (
     select * from {{ ref('stg_erp__sales_order') }}
 )
 
-, sales_order_reason as (
-    select * from {{ ref('stg_erp__sales_order_reason') }}
-)
 
 , currency as (
     select * from {{ ref('stg_erp__currency_rate') }}
